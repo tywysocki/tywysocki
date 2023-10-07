@@ -1,26 +1,34 @@
-name: Swift
-on:
-  # Schedule daily updates
-  schedule: [{cron: "0 0 * * *"}]
-  push:
-    branches: 
-      - main 
-    paths:
-      - '**.swift'
+name: Metrics
 
+on: 
   
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-    - name: Set up Swift
-      uses: actions/setup-swift@v2
-      with: 
-        swift-version: '5.5'
-    - name: Build and Test
-      run: |
-        swift build
-        swift test
+ 
+ 
+ 
+ github-metrics:
+     runs-on: ubuntu-latest
+     permissions:
+       contents: write
+     steps:
+       - name: LeetCode
+         uses: lowlighter/metrics@master
+         with:
+           filename: metrics.plugin.leetcode.svg
+           token: NOT_NEEDED
+           base: ""
+           plugin_leetcode: yes
+           plugin_leetcode_sections: solved, skills, recent
+           plugin_leetcode_limit_recent: 5
+       - name: Most used (with details)
+         uses: lowlighter/metrics@latest
+         with:
+           filename: metrics.plugin.languages.details.svg
+           token: ${{ secrets.METRICS_TOKEN }}
+           base: ""
+           plugin_languages: yes
+           plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
+           plugin_languages_skipped: tywysocki/metrics, tywysocki/pytorch, tywysocki/openai-cookbook
+           plugin_languages_details: bytes-size, percentage
+           plugin_languages_colors: complementary
+           plugin_languages_limit: 8
       
