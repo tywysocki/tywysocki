@@ -20,7 +20,7 @@ jobs:
           base: ""
           plugin_leetcode: yes
           plugin_leetcode_sections: solved, skills, recent
-          plugin_leetcode_ignored_skills: fundamental
+          plugin_leetcode_limit_recent: 5
       - name: Most used (with details)
         uses: lowlighter/metrics@latest
         with:
@@ -29,13 +29,7 @@ jobs:
           base: ""
           plugin_languages: yes
           plugin_languages_ignored: html, css, tex, less, dockerfile, makefile, qmake, lex, cmake, shell, gnuplot
+          plugin_languages_skipped: tywysocki/metrics, tywysocki/pytorch, tywysocki/openai-cookbook
           plugin_languages_details: bytes-size, percentage
-          plugin_languages_limit: 4
-      - name: Full-year calendar
-        uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.plugin.isocalendar.fullyear.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          plugin_languages_colors: complementary
+          plugin_languages_limit: 8
