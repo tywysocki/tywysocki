@@ -15,3 +15,15 @@ jobs:
       - uses: lowlighter/metrics@master
         with:
           token: ${{ secrets.METRICS_TOKEN }}
+      - name: Presets
+        uses: lowlighter/metrics@master
+        with:
+        filename: metrics.presets.svg
+        token: ${{ secrets.METRICS_TOKEN }}
+        base: header, repositories
+        config_presets: https://raw.githubusercontent.com/lowlighter/metrics/presets/lunar-red/preset.yaml
+      prod:
+        skip: true
+      test:
+        modes:
+          - web
