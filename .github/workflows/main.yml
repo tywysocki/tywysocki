@@ -15,15 +15,14 @@ jobs:
       - uses: lowlighter/metrics@master
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-      - name: Presets
-        uses: lowlighter/metrics@master
+
+      - name: LeetCode
+        uses: lowlighter/metrics@latest
         with:
-        filename: metrics.presets.svg
-        token: ${{ secrets.METRICS_TOKEN }}
-        base: header, repositories
-        config_presets: https://raw.githubusercontent.com/lowlighter/metrics/presets/lunar-red/preset.yaml
-      prod:
-        skip: true
-      test:
-        modes:
-          - web
+          filename: metrics.plugin.leetcode.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_leetcode: yes
+          plugin_leetcode_sections: solved, skills, recent
+
+
