@@ -5,4 +5,7 @@
     <picture align="right">
         <img src="https://github.com/tywysocki/tywysocki/blob/main/metrics.plugin.languages.details.svg" align="top" alt="Languages" width="400">
     </picture>
+    <picture align="right">
+        <img src="" align="top" alt="Languages" width="400">
+    </picture>
 </div>
