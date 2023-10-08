@@ -33,4 +33,14 @@ jobs:
           plugin_languages_details: bytes-size, percentage
           plugin_languages_colors: complementary
           plugin_languages_limit: 8
+      - name: Icons
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.topics.icons.svg
+          token: NOT_NEEDED
+          base: ""
+          plugin_topics: yes
+          plugin_topics_limit: 0
+          plugin_topics_mode: icons
+
       
