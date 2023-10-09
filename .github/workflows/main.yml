@@ -52,5 +52,6 @@ jobs:
           plugin_code: yes
           plugin_code_languages: javascript, typescript
           plugin_code_load: 400
+          plugin_code_days: 365
 
       
