@@ -21,35 +21,35 @@
                         <rect x="0" y="0" width="460" height="8" fill="white" rx="5"/>
                     </mask>
                     <rect mask="url(#languages-bar)" x="0" y="0" width="0" height="8" fill="#d1d5da"/>
-                    <rect mask="url(#languages-bar)" x="0" y="0" width="301.8358219385497" height="8" fill="#ff0000"/>
-                    <rect mask="url(#languages-bar)" x="301.8358219385497" y="0" width="98.47779667202435" height="8" fill="#008000"/>
-                    <rect mask="url(#languages-bar)" x="400.31361861057405" y="0" width="58.648776662240756" height="8" fill="#ffa500"/>
-                    <rect mask="url(#languages-bar)" x="458.9623952728148" y="0" width="1.0376047271851971" height="8" fill="#0000ff"/>
+                    <rect mask="url(#languages-bar)" x="0" y="0" width="311.9341113762524" height="8" fill="#F05138"/>
+                    <rect mask="url(#languages-bar)" x="311.9341113762524" y="0" width="91.84908912490087" height="8" fill="#555555"/>
+                    <rect mask="url(#languages-bar)" x="403.78320050115326" y="0" width="54.70102801606298" height="8" fill="#3572A5"/>
+                    <rect mask="url(#languages-bar)" x="458.48422851721625" y="0" width="1.5157714827837183" height="8" fill="#701516"/>
                 </svg>
                 <div class="row fill-width">
                     <section>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#ff0000" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#F05138" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
                                 Swift
                             </div>
                             <small>
-                                <div>169 kB</div>
-                                <div>65.62%</div>
+                                <div>187 kB</div>
+                                <div>67.81%</div>
                             </small>
                         </div>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#ffa500" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#3572A5" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
                                 Python
                             </div>
                             <small>
                                 <div>32.8 kB</div>
-                                <div>12.75%</div>
+                                <div>11.89%</div>
                             </small>
                         </div>
                     </section>
@@ -57,25 +57,25 @@
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#008000" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#555555" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
                                 C
                             </div>
                             <small>
                                 <div>55.1 kB</div>
-                                <div>21.41%</div>
+                                <div>19.97%</div>
                             </small>
                         </div>
                         <div class="field language details">
                             <div class="field">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-                                    <path fill="#0000ff" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
+                                    <path fill="#701516" fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"/>
                                 </svg>
                                 Ruby
                             </div>
                             <small>
-                                <div>581 bytes</div>
-                                <div>0.23%</div>
+                                <div>910 bytes</div>
+                                <div>0.33%</div>
                             </small>
                         </div>
                     </section>
